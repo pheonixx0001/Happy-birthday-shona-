@@ -4,215 +4,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Shona ♡</title>
+<title>Happy Birthday Shona Bhabhi ♡</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --pink:#f7a9bd;
-  --deep:#a84e70;
-  --cream:#fff8f6;
-  --text:#674553;
-  --glass:rgba(255,255,255,.68);
+:root{
+  --pink:#e78bab;
+  --dark:#a44e70;
+  --text:#674454;
+  --glass:rgba(255,250,251,.84);
+  --white:#fff;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   font-family:'Poppins',sans-serif;
   color:var(--text);
-  background:linear-gradient(135deg,#ffe6ed,#fff4ed,#f3e8ff);
-  background-size:cover;
+  background-image:
+    linear-gradient(rgba(255,240,246,.55),rgba(255,244,240,.55)),
+    url("background.jpg");
   background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
   background-attachment:fixed;
   overflow-x:hidden;
-  transition:background .5s;
-}
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:rgba(255,245,248,.22);
-  pointer-events:none;
-  z-index:-1;
 }
 button{font-family:inherit;cursor:pointer}
 a{text-decoration:none;color:inherit}
-section{padding:85px 7%;position:relative}
+section{padding:90px 7%;position:relative}
 h1,h2,h3{font-family:'Playfair Display',serif}
-h2{font-size:clamp(2rem,5vw,3.1rem);text-align:center;margin-bottom:15px}
-.subtitle{text-align:center;margin:0 auto 40px;max-width:650px;line-height:1.9;color:#936879}
+h2{
+  font-size:clamp(2.1rem,5vw,3.3rem);
+  color:var(--dark);text-align:center;
+}
+.subtitle{
+  text-align:center;max-width:680px;margin:15px auto 40px;
+  font-size:13px;line-height:2;color:#896373;
+}
 .script{font-family:'Dancing Script',cursive}
 .container{max-width:1100px;margin:auto}
 .glass{
   background:var(--glass);
-  backdrop-filter:blur(15px);
-  border:1px solid rgba(255,255,255,.8);
+  backdrop-filter:blur(14px);
+  border:1px solid #ffffffc9;
   border-radius:25px;
-  box-shadow:0 12px 40px rgba(153,79,111,.10);
+  box-shadow:0 12px 40px #9d577319;
 }
 .btn{
-  border:0;border-radius:50px;padding:13px 25px;
-  background:linear-gradient(135deg,#ec8eae,#c56c91);
-  color:white;font-weight:600;
-  box-shadow:0 8px 22px #d98aa755;
+  padding:13px 25px;border:0;border-radius:40px;
+  background:linear-gradient(135deg,#e998b5,#bb6488);
+  color:white;font-size:13px;font-weight:600;
+  box-shadow:0 7px 22px #b95c8130;
   transition:.3s;
 }
-.btn:hover{transform:translateY(-4px);box-shadow:0 12px 25px #d98aa777}
-.outline{
-  background:rgba(255,255,255,.6);
-  color:#a84e70;border:1px solid #e9a5bc;
-}
+.btn:hover{transform:translateY(-4px)}
+.btn.light{background:#fff;color:#a44e70;border:1px solid #e9a9bd}
 nav{
-  position:fixed;top:0;left:0;width:100%;z-index:20;
-  padding:14px 6%;display:flex;justify-content:space-between;
-  align-items:center;background:rgba(255,247,249,.78);
-  backdrop-filter:blur(15px);
+  position:fixed;top:0;left:0;width:100%;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 6%;background:#fff9;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #fff;
 }
-.logo{font-family:'Dancing Script';font-size:29px;color:#b6537b}
-.navlinks{display:flex;gap:22px;font-size:12px;font-weight:600}
-.navlinks a:hover{color:#d66c95}
-.menu{display:none;background:none;border:0;font-size:25px;color:#a84e70}
-
-#hero{
-  min-height:100vh;display:flex;align-items:center;
-  justify-content:center;text-align:center;padding-top:110px;
+.logo{font-family:'Dancing Script';font-size:30px;color:#ad5478}
+.links{display:flex;gap:20px;font-size:12px;font-weight:600}
+.links a:hover{color:#d46c95}
+.menu{display:none;border:0;background:none;font-size:25px;color:#a44e70}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding-top:120px;
 }
 .hero-content{max-width:850px}
-.eyebrow{
-  display:inline-block;padding:9px 19px;border-radius:50px;
-  background:#fff9;color:#b45d7c;font-size:12px;
-  letter-spacing:2px;margin-bottom:24px;
+.tag{
+  display:inline-block;padding:10px 20px;border-radius:30px;
+  background:#fff9;letter-spacing:2px;font-size:10px;color:#a44e70;
+  margin-bottom:25px;
 }
-.hero-title{
-  font-size:clamp(3.5rem,10vw,7rem);
-  color:#a64e72;line-height:1.08;
-  text-shadow:2px 5px 20px #d98aa733;
+.hero h1{
+  font-size:clamp(3.5rem,10vw,7.5rem);
+  line-height:1.1;color:#a44e70;
+  text-shadow:0 5px 25px #d68eaa44;
 }
-.hero-title span{font-family:'Dancing Script';color:#dc7c9e}
-.hero-text{max-width:650px;margin:25px auto;line-height:2;font-size:15px}
-.hero-actions{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
-.scroll-hint{margin-top:65px;font-size:12px;opacity:.65;animation:bob 2s infinite}
-@keyframes bob{50%{transform:translateY(9px)}}
-
-.decor{
-  position:absolute;font-size:28px;opacity:.65;
-  animation:float 5s ease-in-out infinite;
+.hero h1 span{font-family:'Dancing Script';color:#df82a4}
+.hero p{
+  max-width:650px;margin:25px auto;line-height:2.1;
+  font-size:14px;color:#795666;
 }
-@keyframes float{50%{transform:translateY(-22px) rotate(10deg)}}
-
+.hero-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.hero-bottom{margin-top:65px;font-size:11px;letter-spacing:2px;opacity:.7}
+.decoration{
+  position:absolute;font-size:30px;animation:float 5s ease-in-out infinite;
+}
+@keyframes float{50%{transform:translateY(-20px) rotate(10deg)}}
+.section-card{max-width:900px;margin:auto;padding:clamp(25px,5vw,55px)}
 .letter{
-  max-width:850px;margin:auto;padding:clamp(25px,5vw,55px);
-  line-height:2.1;font-size:14px;
+  font-size:14px;line-height:2.15;color:#765363;
 }
-.letter .salutation{font-family:'Dancing Script';font-size:35px;color:#bc6082;margin-bottom:18px}
-.letter p{margin:0 0 17px}
-.signature{font-family:'Dancing Script';font-size:29px;color:#b65b7d;text-align:right;margin-top:25px}
-
+.letter p{margin:0 0 18px}
+.letter-title{
+  font-family:'Dancing Script';font-size:36px;
+  color:#b85d82;margin-bottom:22px;
+}
+.sign{
+  text-align:right;font-family:'Dancing Script';
+  font-size:29px;color:#b85d82;margin-top:25px;
+}
 .notes-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:22px;max-width:1050px;margin:auto;
+  gap:22px;max-width:1100px;margin:auto;
 }
-.note-card{
-  padding:28px;border-radius:22px;background:rgba(255,255,255,.76);
-  border:1px solid white;box-shadow:0 10px 30px #a94e7010;
+.note{
+  padding:30px 25px;background:#fffdfde8;
+  border:1px solid #fff;border-radius:22px;
+  box-shadow:0 10px 30px #a44e7010;
   transition:.35s;position:relative;overflow:hidden;
 }
-.note-card:hover{transform:translateY(-8px) rotate(-1deg)}
-.note-card .emoji{font-size:32px;margin-bottom:15px}
-.note-card h3{font-size:22px;color:#ad5879;margin-bottom:12px}
-.note-card p{font-size:13px;line-height:2;color:#795a67}
-
-.surprise-grid{
+.note:hover{transform:translateY(-8px) rotate(-.5deg)}
+.note .emoji{font-size:34px;margin-bottom:14px}
+.note h3{font-size:22px;color:#ad5879;margin-bottom:13px}
+.note p{font-size:12px;line-height:2.05;color:#795d6a}
+.gift-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-  gap:18px;max-width:900px;margin:auto;
+  gap:20px;max-width:950px;margin:auto;
 }
-.surprise{
-  padding:28px 18px;text-align:center;cursor:pointer;
+.gift{
+  text-align:center;padding:30px 20px;cursor:pointer;
   transition:.3s;
 }
-.surprise:hover{transform:translateY(-7px)}
-.surprise .big{font-size:48px;display:block;margin-bottom:12px}
-.surprise h3{font-size:20px;margin-bottom:8px;color:#ad5879}
-.surprise p{font-size:12px;line-height:1.8}
-
-.cake-area{text-align:center;padding:35px}
-.cake{font-size:110px;display:block;animation:bob 3s infinite}
-.cake-message{font-family:'Dancing Script';font-size:28px;color:#ad5879;margin:15px 0}
-#cakeResult{min-height:30px;margin-top:15px;font-size:14px}
-
+.gift:hover{transform:translateY(-8px)}
+.gift .icon{font-size:48px;display:block;margin-bottom:14px}
+.gift h3{font-size:21px;color:#ae597b;margin-bottom:9px}
+.gift p{font-size:12px;line-height:1.8}
+.cake-area{text-align:center;padding:40px}
+.cake{font-size:105px;display:block;animation:float 3s infinite}
+.cake-area p{line-height:2;font-size:13px;margin:15px auto}
+#cakeText{font-family:'Dancing Script';font-size:28px;color:#b85d82}
 .bouquet{text-align:center;padding:40px}
-.bouquet-art{font-size:65px;letter-spacing:5px;margin:20px 0;animation:float 4s infinite}
-
-.theme-panel{padding:30px;max-width:850px;margin:auto;text-align:center}
-.theme-options{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px 0}
+.flowers{font-size:57px;letter-spacing:5px;margin:25px 0;animation:float 4s infinite}
+.bouquet p{font-size:13px;line-height:2;max-width:600px;margin:15px auto}
+.theme-box{max-width:850px;margin:auto;padding:35px;text-align:center}
+.theme-box p{font-size:12px;line-height:2;margin:14px auto;max-width:620px}
+.theme-options{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:22px}
 .swatch{
-  width:46px;height:46px;border-radius:50%;border:3px solid white;
+  height:43px;width:43px;border-radius:50%;border:3px solid white;
   box-shadow:0 3px 12px #0002;cursor:pointer;transition:.2s;
 }
 .swatch:hover{transform:scale(1.15)}
-.upload-label{display:inline-block;margin:8px}
-.upload-label input{display:none}
-.theme-panel p{font-size:12px;line-height:1.9;margin:12px auto;max-width:600px}
-#bgPreview{width:100%;max-width:250px;height:120px;object-fit:cover;border-radius:15px;display:none;margin:15px auto}
-
-.hidden-message{
-  display:none;padding:25px;margin:20px auto;max-width:650px;
-  line-height:2;text-align:center;
+#preview{display:none;width:100%;max-width:240px;height:130px;object-fit:cover;border-radius:15px;margin:15px auto}
+.upload{display:inline-block;margin:10px}
+.upload input{display:none}
+.secret{
+  max-width:650px;margin:25px auto;padding:30px;
+  text-align:center;line-height:2;display:none;
 }
-.hidden-message.show{display:block;animation:appear .7s}
+.secret.show{display:block;animation:appear .7s}
 @keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
-
-#compliment{font-family:'Dancing Script';font-size:30px;color:#a84e70;min-height:65px;margin:25px}
-.final{
-  text-align:center;padding:100px 7%;
-  background:linear-gradient(135deg,#f8dce6aa,#fff4eaaa);
+.compliment{text-align:center;padding:35px}
+#complimentText{
+  font-family:'Dancing Script';font-size:32px;
+  color:#ae567a;min-height:70px;margin:20px;
 }
-.final h2{font-size:clamp(2.5rem,7vw,4.5rem);color:#a84e70}
-.final p{max-width:650px;margin:20px auto;line-height:2}
-footer{text-align:center;padding:25px;font-size:12px;background:#fff7}
-
+.final{
+  padding:100px 7%;text-align:center;
+  background:#fff8;
+}
+.final h2{font-size:clamp(2.5rem,7vw,4.5rem)}
+.final p{max-width:650px;margin:20px auto;line-height:2;font-size:14px}
+.final .script{font-size:34px;color:#b85d82}
+footer{text-align:center;padding:25px;background:#fff9;font-size:11px}
 .modal{
-  position:fixed;inset:0;background:#42202c88;z-index:100;
-  display:none;align-items:center;justify-content:center;padding:20px;
+  position:fixed;inset:0;z-index:100;
+  background:#43202c88;display:none;
+  align-items:center;justify-content:center;padding:20px;
 }
 .modal.show{display:flex}
 .modal-box{
-  max-width:500px;width:100%;padding:35px;text-align:center;
-  position:relative;animation:appear .4s;
+  max-width:480px;width:100%;padding:35px;
+  text-align:center;position:relative;animation:appear .4s;
 }
-.modal-box h3{font-size:28px;color:#ac5577;margin-bottom:15px}
-.modal-box p{line-height:2;font-size:14px}
-.close{position:absolute;right:18px;top:12px;border:0;background:none;font-size:25px;color:#a84e70}
-
-.floaties{
-  position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden;
+.modal-box h3{font-size:28px;color:#ad5879;margin:12px 0}
+.modal-box p{font-size:13px;line-height:2}
+.close{
+  position:absolute;right:16px;top:10px;
+  border:0;background:none;font-size:25px;color:#a44e70;
 }
-.floaty{
-  position:absolute;bottom:-40px;animation:rise linear forwards;
-  opacity:.7;
+.floaties{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.floaty{position:absolute;bottom:-40px;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+#top{
+  position:fixed;right:18px;bottom:18px;z-index:40;
+  border:0;border-radius:50%;height:45px;width:45px;
+  background:#b85e82;color:white;font-size:20px;
 }
-@keyframes rise{
-  to{transform:translateY(-110vh) rotate(360deg);opacity:0}
-}
-#topBtn{
-  position:fixed;bottom:20px;right:20px;z-index:30;
-  width:45px;height:45px;border:0;border-radius:50%;
-  background:#bd6687;color:white;font-size:20px;
-  box-shadow:0 5px 15px #0002;
-}
-
 @media(max-width:700px){
-  .navlinks{
+  .links{
     display:none;position:absolute;top:60px;left:0;width:100%;
-    flex-direction:column;background:#fff8f9;padding:22px;text-align:center;
+    flex-direction:column;background:#fff;padding:22px;text-align:center;
   }
-  .navlinks.open{display:flex}
+  .links.open{display:flex}
   .menu{display:block}
   section{padding:70px 6%}
-  .hero-text{font-size:13px}
-  .letter{font-size:13px}
+  .hero p{font-size:12px}
+  .letter{font-size:12px}
+  body{background-attachment:scroll}
 }
 </style>
 </head>
@@ -224,277 +219,348 @@ footer{text-align:center;padding:25px;font-size:12px;background:#fff7}
 <nav>
   <div class="logo">For Shona ♡</div>
   <button class="menu" onclick="toggleMenu()">☰</button>
-  <div class="navlinks" id="navlinks">
-    <a href="#hero">Home</a>
+  <div class="links" id="links">
+    <a href="#home">Home</a>
     <a href="#letter">A Letter</a>
-    <a href="#notes">Little Notes</a>
-    <a href="#surprises">Surprises</a>
+    <a href="#notes">Love Notes</a>
+    <a href="#gifts">Surprises</a>
     <a href="#background">Background</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <span class="decor" style="top:20%;left:9%">🌷</span>
-  <span class="decor" style="top:28%;right:10%;animation-delay:1s">🦋</span>
-  <span class="decor" style="bottom:18%;left:14%;animation-delay:2s">💗</span>
+<!-- HOME -->
+<section class="hero" id="home">
+  <span class="decoration" style="top:22%;left:9%">🌷</span>
+  <span class="decoration" style="top:30%;right:10%;animation-delay:1s">🦋</span>
+  <span class="decoration" style="bottom:18%;left:14%;animation-delay:2s">💗</span>
   <div class="hero-content">
-    <div class="eyebrow">A LITTLE SURPRISE MADE WITH LOVE</div>
-    <h1 class="hero-title">Happy Birthday<br><span>Shona!</span></h1>
-    <p class="hero-text">
-      To the sweetest bhabhi, a beautiful soul and a truly special part of our family.
-      Today is all about celebrating you, your smile and all the happiness you bring along.
+    <div class="tag">A SPECIAL DAY FOR A SPECIAL PERSON</div>
+    <h1>Happy Birthday<br><span>Shona Bhabhi!</span></h1>
+    <p>
+      Today is all about you! A little corner filled with birthday wishes,
+      sweet words, flowers and lots of affection, specially made for
+      the loveliest bhabhi. May your day be as beautiful as your smile.
     </p>
-    <div class="hero-actions">
+    <div class="hero-buttons">
       <a class="btn" href="#letter">Read Your Letter 💌</a>
-      <a class="btn outline" href="#surprises">Explore Surprises ✨</a>
+      <a class="btn light" href="#gifts">Open Surprises 🎁</a>
     </div>
-    <div class="scroll-hint">SCROLL DOWN FOR YOUR SURPRISE ↓</div>
+    <div class="hero-bottom">SCROLL DOWN FOR YOUR LITTLE SURPRISE ↓</div>
   </div>
 </section>
 
 <!-- LETTER -->
 <section id="letter">
-  <h2>A Letter For You 💌</h2>
-  <p class="subtitle">Some wishes are too special to fit into just one birthday message.</p>
-  <div class="letter glass">
-    <div class="salutation">Dear Shona Bhabhi,</div>
+  <h2>A Letter From Your Devar 💌</h2>
+  <p class="subtitle">Some feelings deserve more than a simple happy birthday message.</p>
+  <div class="section-card glass letter">
+    <div class="letter-title">Dear Shona Bhabhi, 🌷</div>
 
     <p>
-      First of all, a very, very happy birthday to you! ❤️
-      I hope your special day brings you countless reasons to smile,
-      lots of love, beautiful surprises and everything that makes your heart happy.
+      Happiest birthday to you, Shona Bhabhi! ❤️ I hope today brings
+      you a thousand little reasons to smile and reminds you just how
+      special you are. I wanted to make something a little different
+      for your birthday, something that could put a smile on your face
+      and make you feel extra loved and appreciated.
     </p>
 
     <p>
-      I just want to say that having you as my bhabhi is genuinely something
-      special. You are not just a relation in the family; you are someone
-      who brings warmth, happiness and a lovely kind of positivity with you.
-      Your presence makes things feel a little more cheerful, and your smile
-      has its own way of making everyone's day better.
+      Honestly, having you as my bhabhi is a lovely part of my life.
+      You are not just someone who became a part of our family;
+      you are someone whose presence adds its own warmth and happiness.
+      I hope you always feel welcomed, respected and appreciated,
+      because you genuinely deserve all of that and so much more.
     </p>
 
     <p>
-      I may not always express it properly, and sometimes I might even tease
-      you for absolutely no reason, but please know that you are truly valued
-      and respected. You deserve all the love, care and happiness in the world.
-      I hope you never have to compromise on your dreams, your happiness or
-      the little things that make you feel like yourself.
+      I know I might tease you sometimes, annoy you with silly jokes
+      or act like the most mischievous devar ever. But that's just
+      how I show my little bit of affection! 😂 Behind every bit of
+      that teasing is a lot of respect and genuine care. And yes,
+      you will have to tolerate your devar's nonsense for a long time!
     </p>
 
     <p>
-      May this new year of your life open beautiful doors for you. May every
-      effort you make bring you closer to your dreams, every difficult day
-      turn into a lesson, and every ordinary day give you a special reason
-      to be grateful. I wish you good health, peace of mind, success and
-      endless moments that make you genuinely happy.
+      On your birthday, I wish that every dream you have ever imagined
+      gets a chance to come true. May you achieve everything you work
+      hard for, may your efforts always be recognised, and may you
+      never have to give up on the things that make you happy.
+      I hope life surprises you with beautiful opportunities and
+      gives you countless reasons to feel proud of yourself.
     </p>
 
     <p>
-      And one more thing, Shona Bhabhi — keep smiling, keep being your lovely
-      self, and never forget how important you are to this family.
-      You deserve to be celebrated not just today, but every single day.
+      More than anything, I wish you good health, peace of mind and
+      genuine happiness. May you always have people around you who
+      understand you, support you and stand beside you. May your
+      difficult days become easier and your happy days become even
+      more beautiful. You deserve a life full of kindness and blessings.
     </p>
 
     <p>
-      Once again, happiest birthday! May your life always be filled with
-      beautiful blessings, sweet surprises and people who make you feel
-      as special as you truly are. Lots of respect, affection and best wishes
-      from your devar. 🌷
+      And please, never stop smiling. Keep being the lovely person
+      you are. Never underestimate your importance in this family
+      or the happiness your presence brings. I might not say these
+      things every day, but I truly wish the best for you.
     </p>
 
-    <div class="signature">With lots of love & respect,<br>Your devar ♡</div>
+    <p>
+      So enjoy your special day to the fullest. Eat your favourite
+      food, accept all the pampering, take lots of pictures and
+      don't forget to save some birthday cake for your favourite
+      devar! 😂🎂
+    </p>
+
+    <p>
+      Once again, happiest birthday, Shona Bhabhi.
+      May this new chapter of your life be filled with beautiful
+      beginnings, endless blessings, lots of laughter and all the
+      happiness your heart can hold. Stay blessed always! 💗
+    </p>
+
+    <div class="sign">With lots of love & respect,<br>Your devar ♡</div>
   </div>
 </section>
 
-<!-- NOTES -->
+<!-- LOVE NOTES -->
 <section id="notes">
-  <h2>Little Notes For Shona 🌸</h2>
-  <p class="subtitle">A few more things that deserve to be said on your special day.</p>
+  <h2>Little Love Notes For You 💗</h2>
+  <p class="subtitle">A few more heartfelt things your devar wants you to know.</p>
 
   <div class="notes-grid">
-    <div class="note-card">
-      <div class="emoji">🌷</div>
-      <h3>Keep Blooming</h3>
+
+    <div class="note">
+      <div class="emoji">🌸</div>
+      <h3>My Sweetest Bhabhi</h3>
       <p>
-        May you keep growing into everything you dream of becoming.
-        Never let a difficult day make you doubt your own strength.
-        There is so much beauty waiting for you ahead, and I hope you
-        get to experience every bit of it. Keep blooming, Shona!
+        Shona Bhabhi, you really are someone special. I hope you know
+        that your presence matters and that you are appreciated more
+        than words can explain. May your life always be filled with
+        warmth, kindness and people who make you feel loved.
+        Keep smiling because you deserve every bit of happiness.
       </p>
     </div>
 
-    <div class="note-card">
-      <div class="emoji">💗</div>
-      <h3>You Are Appreciated</h3>
-      <p>
-        Sometimes people forget to say how much they appreciate someone.
-        So today, let me say it clearly: your kindness, your presence and
-        the little things you do matter. You are an important part of
-        this family, and we are lucky to have you.
-      </p>
-    </div>
-
-    <div class="note-card">
-      <div class="emoji">🦋</div>
-      <h3>Dream Without Limits</h3>
-      <p>
-        I hope you always find the courage to chase your dreams.
-        May you get opportunities that excite you, people who support you
-        and the confidence to choose what makes you happy.
-        Your dreams deserve every chance to come true.
-      </p>
-    </div>
-
-    <div class="note-card">
+    <div class="note">
       <div class="emoji">🎀</div>
-      <h3>Stay The Same</h3>
+      <h3>A Little Devar's Promise</h3>
       <p>
-        Keep that lovely smile, that wonderful energy and that special
-        way of making people feel welcome. Never feel that you have to
-        change who you are to make the world happy. Being yourself is
-        already something beautiful.
+        I promise to keep annoying you with random jokes, silly
+        conversations and unnecessary teasing! 😂 But whenever
+        you need a little support or encouragement, I genuinely
+        wish to be someone who brings a smile to your face.
+        That's what having a sweet bhabhi means to me.
       </p>
     </div>
 
-    <div class="note-card">
-      <div class="emoji">✨</div>
-      <h3>Only Good Things</h3>
+    <div class="note">
+      <div class="emoji">🦋</div>
+      <h3>Keep Chasing Your Dreams</h3>
       <p>
-        I wish you mornings filled with hope, afternoons filled with
-        achievement and nights filled with peace. May the coming year
-        be kinder, brighter and more beautiful than you imagined.
-        You deserve the very best.
+        Never stop believing in yourself, Shona. You have so many
+        beautiful possibilities ahead of you. I hope you get the
+        courage to follow your dreams, the strength to face challenges
+        and the happiness of seeing your hard work turn into something
+        wonderful. You deserve to achieve great things.
       </p>
     </div>
 
-    <div class="note-card">
+    <div class="note">
+      <div class="emoji">💐</div>
+      <h3>You Deserve Flowers</h3>
+      <p>
+        If I could send you a flower for every good wish I have
+        for you, you would receive an entire garden! Every flower
+        would carry a little message: stay happy, stay blessed,
+        keep growing and never forget how precious your happiness
+        is. Sending you the biggest virtual bouquet!
+      </p>
+    </div>
+
+    <div class="note">
       <div class="emoji">🧿</div>
-      <h3>Always Stay Happy</h3>
+      <h3>Always Stay Blessed</h3>
       <p>
-        May all the negativity stay far away from you. May you always
-        be surrounded by genuine people, endless blessings and reasons
-        to laugh. Keep shining, Shona Bhabhi. Lots of good wishes
-        are always coming your way!
+        May every negative thought stay far away from you.
+        May your heart always find peace and your home always
+        be filled with laughter. I pray that every coming year
+        gives you more beautiful experiences, good health,
+        success and countless blessings. Lots of good wishes!
       </p>
     </div>
+
+    <div class="note">
+      <div class="emoji">👑</div>
+      <h3>Our Family's Shona</h3>
+      <p>
+        You are a beautiful part of this family, and I hope
+        you always feel that way. Your happiness matters,
+        your opinions matter and your dreams matter.
+        Never feel that you have to be perfect for anyone.
+        Just be yourself, because that is more than enough.
+      </p>
+    </div>
+
+    <div class="note">
+      <div class="emoji">💗</div>
+      <h3>For All Your Smiles</h3>
+      <p>
+        I hope you laugh a little louder, smile a little longer
+        and find happiness in even the smallest things.
+        May you always have someone to share your excitement with,
+        someone to encourage you and someone to remind you
+        that you are doing wonderfully. Keep that smile forever!
+      </p>
+    </div>
+
+    <div class="note">
+      <div class="emoji">✨</div>
+      <h3>A Beautiful New Chapter</h3>
+      <p>
+        Another birthday, another year of possibilities and another
+        chance to make beautiful things happen. I hope this year
+        brings you unexpected happiness, memorable celebrations,
+        new achievements and peaceful days. May everything you
+        are silently wishing for find its way to you.
+      </p>
+    </div>
+
+    <div class="note">
+      <div class="emoji">🌷</div>
+      <h3>One Last Hug In Words</h3>
+      <p>
+        This little website may not be the biggest birthday gift,
+        but every message here comes with genuine affection.
+        I hope it makes you feel special, because you truly are.
+        Thank you for being such a lovely bhabhi.
+        Happiest birthday once again, Shona! 💗
+      </p>
+    </div>
+
   </div>
 </section>
 
-<!-- SURPRISES -->
-<section id="surprises">
-  <h2>Some Little Surprises 🎁</h2>
-  <p class="subtitle">Tap on each gift. There's a little birthday message waiting inside!</p>
+<!-- SURPRISE GIFTS -->
+<section id="gifts">
+  <h2>Open Your Little Gifts 🎁</h2>
+  <p class="subtitle">Four tiny surprises, each carrying a special birthday wish.</p>
 
-  <div class="surprise-grid">
-    <div class="surprise glass" onclick="openGift(0)">
-      <span class="big">🎁</span>
-      <h3>Gift No. 1</h3>
-      <p>A little birthday wish</p>
+  <div class="gift-grid">
+    <div class="gift glass" onclick="openGift(0)">
+      <span class="icon">🎁</span>
+      <h3>A Birthday Gift</h3>
+      <p>Open something special</p>
     </div>
-    <div class="surprise glass" onclick="openGift(1)">
-      <span class="big">💌</span>
-      <h3>Gift No. 2</h3>
-      <p>A sweet little note</p>
+    <div class="gift glass" onclick="openGift(1)">
+      <span class="icon">💌</span>
+      <h3>A Secret Note</h3>
+      <p>A few words from your devar</p>
     </div>
-    <div class="surprise glass" onclick="openGift(2)">
-      <span class="big">🌸</span>
-      <h3>Gift No. 3</h3>
-      <p>A bouquet of wishes</p>
+    <div class="gift glass" onclick="openGift(2)">
+      <span class="icon">🌷</span>
+      <h3>Flower Wishes</h3>
+      <p>A bouquet full of blessings</p>
     </div>
-    <div class="surprise glass" onclick="openGift(3)">
-      <span class="big">👑</span>
-      <h3>Gift No. 4</h3>
-      <p>For our special bhabhi</p>
+    <div class="gift glass" onclick="openGift(3)">
+      <span class="icon">👑</span>
+      <h3>Special Bhabhi</h3>
+      <p>Because you deserve it</p>
     </div>
   </div>
 </section>
 
 <!-- CAKE -->
-<section id="cake-section">
-  <h2>Make A Birthday Wish 🎂</h2>
-  <p class="subtitle">Your virtual birthday cake is ready, Shona!</p>
+<section id="cake">
+  <h2>Time For Birthday Cake! 🎂</h2>
+  <p class="subtitle">Make a wish, Shona Bhabhi. This cake is all yours!</p>
   <div class="cake-area glass container">
     <span class="cake">🎂</span>
-    <div class="cake-message">One special wish just for you!</div>
-    <button class="btn" onclick="cakeWish()">Cut Your Cake 🎉</button>
-    <div id="cakeResult"></div>
+    <div id="cakeText">Make a beautiful birthday wish!</div>
+    <p>Close your eyes, make a wish and let the birthday magic begin.</p>
+    <button class="btn" onclick="cutCake()">Cut The Cake! 🎉</button>
+    <p id="cakeResult"></p>
   </div>
 </section>
 
-<!-- BOUQUET -->
-<section id="bouquet">
-  <h2>A Bouquet For You 💐</h2>
-  <p class="subtitle">Because flowers are always a good idea!</p>
+<!-- FLOWERS -->
+<section id="flowers">
+  <h2>A Bouquet Just For You 💐</h2>
+  <p class="subtitle">No special occasion is complete without flowers!</p>
   <div class="bouquet glass container">
-    <div class="bouquet-art">🌷 🌸 🌹 🌼</div>
-    <h3 class="script" style="font-size:34px;color:#b65c7c">Just for you, Shona!</h3>
-    <p style="line-height:2;margin:15px auto;max-width:550px;font-size:13px">
-      Sending you a virtual bouquet filled with good wishes, happiness,
-      success and a whole lot of affection. May your days always bloom
-      as beautifully as these flowers.
+    <div class="flowers">🌷 🌸 🌹 🌼 🌷</div>
+    <h3 class="script" style="font-size:36px;color:#b85d82">For our lovely Shona Bhabhi</h3>
+    <p>
+      Sending you a bouquet full of love, respect, good wishes and
+      blessings. May your life bloom with happiness and may every
+      new day bring something beautiful into your world.
     </p>
     <button class="btn" onclick="flowerRain()">Send More Flowers 🌺</button>
   </div>
 </section>
 
-<!-- COMPLIMENT -->
+<!-- COMPLIMENTS -->
 <section id="compliments">
-  <h2>A Little Reminder ✨</h2>
-  <p class="subtitle">Tap the button whenever you need a little birthday appreciation.</p>
-  <div class="glass container" style="padding:35px;text-align:center">
-    <div id="compliment">You deserve all the happiness in the world! 💗</div>
-    <button class="btn" onclick="newCompliment()">Another Compliment ♡</button>
+  <h2>A Little Appreciation Corner ✨</h2>
+  <p class="subtitle">Because you can never have too many birthday compliments!</p>
+  <div class="compliment glass container">
+    <div id="complimentText">You deserve all the happiness in the world! 💗</div>
+    <button class="btn" onclick="newCompliment()">Give Me Another One ♡</button>
   </div>
 </section>
 
-<!-- BACKGROUND CUSTOMIZER -->
+<!-- BACKGROUND -->
 <section id="background">
-  <h2>Make Your Own Background 🎨</h2>
-  <p class="subtitle">Choose a look you love, or upload your own favourite picture from your device!</p>
+  <h2>Choose Your Background 🎨</h2>
+  <p class="subtitle">Make the website look just the way you like it.</p>
 
-  <div class="theme-panel glass">
-    <h3 style="font-size:24px;color:#ac5879">Choose Your Mood</h3>
+  <div class="theme-box glass">
+    <h3 style="font-size:24px;color:#ae5879">Ready-made Colours</h3>
     <div class="theme-options">
-      <button class="swatch" style="background:linear-gradient(135deg,#ffe0e9,#fff4ed)" onclick="setTheme('pink')" title="Pink"></button>
-      <button class="swatch" style="background:linear-gradient(135deg,#e7ddff,#fce6f4)" onclick="setTheme('lavender')" title="Lavender"></button>
-      <button class="swatch" style="background:linear-gradient(135deg,#dff3ff,#f3eaff)" onclick="setTheme('blue')" title="Baby Blue"></button>
-      <button class="swatch" style="background:linear-gradient(135deg,#fff0c9,#ffe1d9)" onclick="setTheme('peach')" title="Peach"></button>
-      <button class="swatch" style="background:linear-gradient(135deg,#ddf4e5,#fff4d9)" onclick="setTheme('mint')" title="Mint"></button>
-      <button class="swatch" style="background:linear-gradient(135deg,#f8d8ef,#e8d8ff)" onclick="setTheme('dreamy')" title="Dreamy"></button>
+      <button class="swatch" style="background:#ffe0e9" onclick="theme('pink')" title="Pink"></button>
+      <button class="swatch" style="background:#e7ddff" onclick="theme('lavender')" title="Lavender"></button>
+      <button class="swatch" style="background:#dff3ff" onclick="theme('blue')" title="Blue"></button>
+      <button class="swatch" style="background:#fff0c9" onclick="theme('peach')" title="Peach"></button>
+      <button class="swatch" style="background:#ddf4e5" onclick="theme('mint')" title="Mint"></button>
     </div>
 
-    <div style="margin-top:25px">
-      <h3 style="font-size:21px;color:#ac5879">Upload Your Own Background</h3>
-      <p>Select any picture from your phone or computer gallery. It will become the background of the whole website.</p>
+    <h3 style="font-size:22px;color:#ae5879;margin-top:30px">Upload Your Own Photo</h3>
+    <p>
+      You can also change the main background by replacing the
+      <b>background.jpg</b> image in your website folder.
+      No need to edit the HTML code!
+    </p>
+    <p>
+      You can preview a new photo below. This preview is temporary;
+      for a permanent change, replace the background.jpg file.
+    </p>
 
-      <label class="btn upload-label">
-        📸 Choose Background Photo
-        <input type="file" id="bgUpload" accept="image/*" onchange="uploadBackground(event)">
-      </label>
-      <br>
-      <img id="bgPreview" alt="Your selected background preview">
-      <br>
-      <button class="btn outline" onclick="resetBackground()">Reset Background ↺</button>
-    </div>
-    <p style="margin-top:20px">Tip: Choose a soft, light picture so that the birthday messages remain easy to read.</p>
+    <label class="btn upload">
+      Choose Photo To Preview 📸
+      <input type="file" id="photoInput" accept="image/*" onchange="previewPhoto(event)">
+    </label>
+
+    <img id="preview" alt="Background preview">
+
+    <br>
+    <button class="btn light" onclick="resetTheme()">Reset Colour ↺</button>
   </div>
 </section>
 
-<!-- SECRET -->
+<!-- SECRET MESSAGE -->
 <section id="secret">
-  <h2>One Last Little Surprise 🤫</h2>
-  <p class="subtitle">There's a special message hidden here. Open it!</p>
+  <h2>A Little Secret Message 🤫</h2>
+  <p class="subtitle">There is one more birthday wish hidden just for you.</p>
   <div style="text-align:center">
-    <button class="btn" onclick="revealSecret()">Open Your Secret Wish 💗</button>
-    <div id="secretMessage" class="hidden-message glass">
-      <h3 class="script" style="font-size:34px;color:#ad5879;margin-bottom:12px">Dear Shona Bhabhi,</h3>
+    <button class="btn" onclick="secret()">Open Your Secret Wish 💗</button>
+    <div class="secret glass" id="secretBox">
+      <h3 class="script" style="font-size:35px;color:#b85d82">Dear Shona Bhabhi,</h3>
       <p>
-        No matter how many birthday wishes you receive today, I hope you
-        remember one thing: you are appreciated, respected and loved as
-        a part of this family. May life always give you more reasons to
-        smile than reasons to worry. Stay blessed, stay happy and keep
-        shining. Happiest birthday once again! 🌷💗
+        I hope you always remember that you are an important and
+        appreciated part of this family. May you never run out of
+        reasons to smile, courage to follow your dreams or people
+        who genuinely care for you. You deserve every beautiful
+        thing life has to offer. Keep shining, stay blessed and
+        always be happy. Your devar is always wishing the best for you! 🌷
       </p>
     </div>
   </div>
@@ -502,172 +568,177 @@ footer{text-align:center;padding:25px;font-size:12px;background:#fff7}
 
 <!-- FINAL -->
 <section class="final">
-  <h2>Happy Birthday, <span class="script">Shona!</span> 💗</h2>
+  <h2>Happiest Birthday,<br><span class="script">Shona Bhabhi!</span> 💗</h2>
   <p>
-    May your life be as lovely as your heart, as bright as your smile
-    and as beautiful as the wishes being sent your way today.
-    Keep smiling, keep shining and have the most wonderful birthday!
+    May your days be full of sunshine, your heart be full of peace
+    and your life be full of beautiful blessings. Keep smiling,
+    keep growing and keep being the wonderful person you are.
+    Wishing you the happiest birthday and a truly beautiful year ahead!
   </p>
-  <div style="font-size:40px;margin:25px">🌷 🎀 🦋 💐</div>
-  <p class="script" style="font-size:30px;color:#ae5979">Lots of love & best wishes ♡</p>
-  <button class="btn" onclick="celebrate()">One More Celebration! 🎉</button>
+  <div style="font-size:42px;margin:25px">🌸 💐 🎀 🦋</div>
+  <div class="script">Lots of love & respect, always ♡</div>
+  <br><br>
+  <button class="btn" onclick="celebrate()">Celebrate Again! 🎉</button>
 </section>
 
 <footer>
-  Made with lots of love, respect and birthday wishes ♡
-  <br>Especially for Shona Bhabhi 🌸
+  Made with love, respect and lots of birthday wishes ♡
+  <br>Especially for our Shona Bhabhi 🌷
 </footer>
 
-<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- MODAL -->
-<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+<!-- POPUP -->
+<div class="modal" id="modal" onclick="if(event.target===this)closeGift()">
   <div class="modal-box glass">
-    <button class="close" onclick="closeModal()">×</button>
-    <div style="font-size:48px;margin-bottom:10px" id="modalEmoji">💗</div>
-    <h3 id="modalTitle">A little surprise</h3>
-    <p id="modalText"></p>
-    <button class="btn" style="margin-top:22px" onclick="closeModal()">Aww, thank you ♡</button>
+    <button class="close" onclick="closeGift()">×</button>
+    <div id="giftEmoji" style="font-size:50px">💗</div>
+    <h3 id="giftTitle">A Little Surprise</h3>
+    <p id="giftMessage"></p>
+    <br>
+    <button class="btn" onclick="closeGift()">Aww, Thank You ♡</button>
   </div>
 </div>
 
 <script>
-const gifts = [
+const giftData=[
   {
     emoji:"🎁",
-    title:"A Birthday Wish",
-    text:"May this year bring you new opportunities, beautiful beginnings, good health and countless reasons to smile. May all your efforts turn into achievements and all your wishes find their way to you. Happiest birthday, Shona!"
+    title:"A Birthday Blessing",
+    message:"May every new day bring you closer to your dreams. May your hard work turn into success, your worries turn into peace and your ordinary moments turn into beautiful memories. You deserve a wonderful life, Shona!"
   },
   {
     emoji:"💌",
-    title:"A Little Note",
-    text:"Thank you for being such a lovely part of our family. Your presence, kindness and warmth are appreciated more than words can explain. Always stay happy and keep that beautiful smile!"
+    title:"A Note From Your Devar",
+    message:"I might not say it every day, but I genuinely feel lucky to have such a lovely bhabhi. Keep smiling, keep being yourself and never stop believing in your dreams. Lots of affection and respect for you!"
   },
   {
-    emoji:"🌸",
-    title:"Flowers & Blessings",
-    text:"Sending you a garden full of happiness, flowers full of love and wishes full of blessings. May every season of your life bring something beautiful."
+    emoji:"🌷",
+    title:"A Garden Of Wishes",
+    message:"May your life bloom like a beautiful garden. May every flower represent happiness, every leaf represent hope and every season bring new blessings. Sending you the warmest birthday wishes!"
   },
   {
     emoji:"👑",
-    title:"Our Special Bhabhi",
-    text:"A special birthday wish for someone who deserves to feel special every day. Keep smiling, keep shining and never stop believing in yourself. Lots of respect and affection!"
+    title:"Our Special Shona",
+    message:"Today you are the birthday queen! So enjoy every moment, accept all the pampering, eat your favourite cake and let everyone celebrate you. You deserve all the happiness today and always!"
   }
 ];
 
 function openGift(i){
-  document.getElementById("modalEmoji").textContent=gifts[i].emoji;
-  document.getElementById("modalTitle").textContent=gifts[i].title;
-  document.getElementById("modalText").textContent=gifts[i].text;
+  document.getElementById("giftEmoji").textContent=giftData[i].emoji;
+  document.getElementById("giftTitle").textContent=giftData[i].title;
+  document.getElementById("giftMessage").textContent=giftData[i].message;
   document.getElementById("modal").classList.add("show");
 }
-function closeModal(){document.getElementById("modal").classList.remove("show")}
+function closeGift(){
+  document.getElementById("modal").classList.remove("show");
+}
 
-function cakeWish(){
-  document.getElementById("cakeResult").innerHTML=
-  "🎉 Yayyy! Happy Birthday, Shona! May every wish you make come true! 💗";
+function cutCake(){
+  document.getElementById("cakeText").textContent="Yayyy! Cake cutting time! 🎂";
+  document.getElementById("cakeResult").textContent=
+    "Happy Birthday, Shona Bhabhi! May all your wishes come true! 💗";
   celebrate();
 }
 
-function flowerRain(){
-  for(let i=0;i<35;i++) makeFloaty(["🌸","🌷","🌺","💐"][Math.floor(Math.random()*4)]);
-}
-
-const compliments=[
-  "You bring a special kind of warmth wherever you go. 🌷",
-  "Your smile deserves its own celebration! 💗",
-  "You are appreciated more than you know. 🎀",
-  "May your kindness always find its way back to you. 🦋",
-  "You deserve happiness in every little corner of life. ✨",
-  "Keep shining in your own beautiful way. 🌸",
-  "A lovely person deserves a lovely year ahead. 💐"
-];
-function newCompliment(){
-  document.getElementById("compliment").textContent=
-  compliments[Math.floor(Math.random()*compliments.length)];
-}
-
-function revealSecret(){
-  document.getElementById("secretMessage").classList.toggle("show");
-}
-
-function setTheme(theme){
-  const themes={
-    pink:"linear-gradient(135deg,#ffe0e9,#fff4ed,#f3e8ff)",
-    lavender:"linear-gradient(135deg,#e7ddff,#fce6f4,#e7edff)",
-    blue:"linear-gradient(135deg,#dff3ff,#f3eaff,#e4f6ff)",
-    peach:"linear-gradient(135deg,#fff0c9,#ffe1d9,#fff4e8)",
-    mint:"linear-gradient(135deg,#ddf4e5,#fff4d9,#e3f5ee)",
-    dreamy:"linear-gradient(135deg,#f8d8ef,#e8d8ff,#dceeff)"
-  };
-  document.body.style.backgroundImage=themes[theme];
-  document.body.style.backgroundSize="cover";
-  document.body.style.backgroundAttachment="fixed";
-  document.getElementById("bgPreview").style.display="none";
-  document.getElementById("bgUpload").value="";
-}
-
-function uploadBackground(event){
-  const file=event.target.files[0];
-  if(!file)return;
-  if(!file.type.startsWith("image/")){
-    alert("Please select an image file.");
-    return;
-  }
-  const reader=new FileReader();
-  reader.onload=function(e){
-    const image=e.target.result;
-    document.body.style.backgroundImage=
-      "linear-gradient(rgba(255,245,248,.35),rgba(255,245,248,.35)),url('"+image+"')";
-    document.body.style.backgroundSize="cover";
-    document.body.style.backgroundPosition="center";
-    document.body.style.backgroundAttachment="fixed";
-    const preview=document.getElementById("bgPreview");
-    preview.src=image;
-    preview.style.display="block";
-  };
-  reader.readAsDataURL(file);
-}
-
-function resetBackground(){
-  document.body.style.backgroundImage=
-  "linear-gradient(135deg,#ffe6ed,#fff4ed,#f3e8ff)";
-  document.body.style.backgroundSize="cover";
-  document.body.style.backgroundPosition="center";
-  document.body.style.backgroundAttachment="fixed";
-  document.getElementById("bgPreview").style.display="none";
-  document.getElementById("bgUpload").value="";
-}
-
-function makeFloaty(symbol){
+function makeFloat(symbol){
   const el=document.createElement("span");
   el.className="floaty";
   el.textContent=symbol;
   el.style.left=Math.random()*100+"%";
   el.style.fontSize=(15+Math.random()*18)+"px";
-  el.style.animationDuration=(5+Math.random()*6)+"s";
+  el.style.animationDuration=(5+Math.random()*5)+"s";
   document.getElementById("floaties").appendChild(el);
   setTimeout(()=>el.remove(),11000);
 }
 
-setInterval(()=>{
-  makeFloaty(["💗","🌸","✨","🌷","💕"][Math.floor(Math.random()*5)]);
-},750);
-
-function celebrate(){
-  for(let i=0;i<45;i++){
-    setTimeout(()=>makeFloaty(["💗","🎉","🌸","✨","🎀","💐"][Math.floor(Math.random()*6)]),i*35);
+function flowerRain(){
+  for(let i=0;i<35;i++){
+    setTimeout(()=>makeFloat(["🌷","🌸","🌺","💐"][Math.floor(Math.random()*4)]),i*45);
   }
 }
 
-function toggleMenu(){
-  document.getElementById("navlinks").classList.toggle("open");
+function celebrate(){
+  for(let i=0;i<45;i++){
+    setTimeout(()=>makeFloat(["💗","🎉","✨","🌸","🎀","💐"][Math.floor(Math.random()*6)]),i*35);
+  }
 }
-document.querySelectorAll(".navlinks a").forEach(a=>{
+
+setInterval(()=>{
+  makeFloat(["💗","🌸","✨","🌷","💕"][Math.floor(Math.random()*5)]);
+},850);
+
+const compliments=[
+  "Your smile makes everything feel a little brighter! 🌸",
+  "You deserve happiness in every little moment. 💗",
+  "You are a truly lovely part of this family. 🎀",
+  "May your kindness always come back to you. 🌷",
+  "Keep shining in your own beautiful way! ✨",
+  "You deserve a lifetime full of beautiful blessings. 💐",
+  "The world needs more smiles like yours! 🦋",
+  "Always remember how special and appreciated you are. 💗"
+];
+
+function newCompliment(){
+  const i=Math.floor(Math.random()*compliments.length);
+  document.getElementById("complimentText").textContent=compliments[i];
+}
+
+function secret(){
+  document.getElementById("secretBox").classList.toggle("show");
+}
+
+function toggleMenu(){
+  document.getElementById("links").classList.toggle("open");
+}
+document.querySelectorAll(".links a").forEach(a=>{
   a.addEventListener("click",()=>{
-    document.getElementById("navlinks").classList.remove("open");
+    document.getElementById("links").classList.remove("open");
   });
 });
+
+function theme(name){
+  const themes={
+    pink:"linear-gradient(135deg,#ffe0e9,#fff4ed,#f3e8ff)",
+    lavender:"linear-gradient(135deg,#e7ddff,#fce6f4,#e7edff)",
+    blue:"linear-gradient(135deg,#dff3ff,#f3eaff,#e4f6ff)",
+    peach:"linear-gradient(135deg,#fff0c9,#ffe1d9,#fff4e8)",
+    mint:"linear-gradient(135deg,#ddf4e5,#fff4d9,#e3f5ee)"
+  };
+  document.body.style.backgroundImage=themes[name];
+  document.body.style.backgroundSize="cover";
+  document.body.style.backgroundAttachment="fixed";
+}
+
+function resetTheme(){
+  document.body.style.backgroundImage=
+  'linear-gradient(rgba(255,240,246,.55),rgba(255,244,240,.55)),url("background.jpg")';
+  document.body.style.backgroundPosition="center";
+  document.body.style.backgroundSize="cover";
+  document.body.style.backgroundRepeat="no-repeat";
+  document.getElementById("preview").style.display="none";
+  document.getElementById("photoInput").value="";
+}
+
+function previewPhoto(event){
+  const file=event.target.files[0];
+  if(!file)return;
+  if(!file.type.startsWith("image/")){
+    alert("Please select an image.");
+    return;
+  }
+  const reader=new FileReader();
+  reader.onload=function(e){
+    const preview=document.getElementById("preview");
+    preview.src=e.target.result;
+    preview.style.display="block";
+    document.body.style.backgroundImage=
+      "linear-gradient(rgba(255,240,246,.45),rgba(255,244,240,.45)),url('"+e.target.result+"')";
+    document.body.style.backgroundSize="cover";
+    document.body.style.backgroundPosition="center";
+  };
+  reader.readAsDataURL(file);
+}
 </script>
 </body>
 </html>
