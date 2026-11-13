@@ -1,0 +1,1295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shona's Magical Birthday World ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --pink:#f7a9c4;
+ --deep:#b94e79;
+ --cream:#fff8f1;
+ --lav:#e9dcff;
+ --ink:#684454;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+ background:linear-gradient(135deg,#fff4f5,#ffe5ef,#f4eaff);
+ color:var(--ink);
+ font-family:'DM Sans',sans-serif;
+ overflow-x:hidden;
+}
+
+button{font:inherit;cursor:pointer;border:0}
+.script{font-family:'Sacramento',cursive}
+.serif{font-family:'Playfair Display',serif}
+
+.topbar{
+ position:fixed;
+ z-index:20;
+ top:12px;
+ left:50%;
+ transform:translateX(-50%);
+ width:94%;
+ max-width:950px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:10px 16px;
+ background:#ffffffd9;
+ backdrop-filter:blur(14px);
+ border-radius:30px;
+}
+
+.brand{
+ font:27px 'Sacramento';
+ color:var(--deep);
+}
+
+.nav{display:flex;gap:16px}
+.nav a{
+ font-size:12px;
+ text-decoration:none;
+ color:var(--ink);
+ font-weight:bold;
+}
+
+.iconbtn{
+ width:35px;
+ height:35px;
+ border-radius:50%;
+ background:#ffe6ef;
+ color:var(--deep);
+}
+
+.hero{
+ min-height:100vh;
+ display:grid;
+ place-items:center;
+ text-align:center;
+ padding:120px 16px 70px;
+ position:relative;
+}
+
+.hero-inner{
+ max-width:780px;
+ position:relative;
+ z-index:2;
+}
+
+.eyebrow{
+ letter-spacing:3px;
+ text-transform:uppercase;
+ font-size:11px;
+ color:#b66a88;
+ font-weight:bold;
+}
+
+.hero h1{
+ font:clamp(60px,11vw,110px)/.98 'Sacramento';
+ color:#bd5c83;
+ margin:18px 0;
+}
+
+.hero p{
+ max-width:580px;
+ margin:16px auto;
+ line-height:1.8;
+ color:#886477;
+}
+
+.btn{
+ padding:13px 22px;
+ border-radius:30px;
+ background:linear-gradient(120deg,#ed9fbc,#d47aa2);
+ color:white;
+ box-shadow:0 8px 20px #d77da44a;
+ font-weight:bold;
+ transition:.25s;
+}
+
+.btn:hover{transform:translateY(-3px)}
+
+.alt{
+ background:white;
+ color:var(--deep);
+ border:1px solid #f5cfdd;
+}
+
+.hero-actions{
+ display:flex;
+ gap:10px;
+ justify-content:center;
+ flex-wrap:wrap;
+ margin-top:26px;
+}
+
+.hero-deco{
+ position:absolute;
+ font-size:45px;
+ animation:float 5s infinite ease-in-out;
+}
+
+.d1{top:20%;left:10%}
+.d2{top:25%;right:10%}
+.d3{bottom:20%;left:15%}
+.d4{bottom:20%;right:15%}
+
+@keyframes float{
+ 50%{transform:translateY(-22px) rotate(12deg)}
+}
+
+section{padding:75px 0}
+
+.wrap{
+ width:min(1080px,92%);
+ margin:auto;
+}
+
+.section-head{
+ text-align:center;
+ margin-bottom:32px;
+}
+
+.section-head .script{
+ font-size:34px;
+ color:var(--deep);
+}
+
+.section-head h2{
+ font:clamp(28px,5vw,43px) 'Playfair Display';
+ margin:5px 0 9px;
+ color:#8d4c68;
+}
+
+.section-head p{
+ color:#9b7788;
+ font-size:14px;
+}
+
+.panel{
+ background:#ffffffc9;
+ border:1px solid white;
+ border-radius:26px;
+ padding:26px;
+ box-shadow:0 15px 45px #b86a8512;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:16px;
+}
+
+.note{
+ padding:22px;
+ border-radius:22px;
+ background:linear-gradient(145deg,#fff,#fff1f6);
+ border:1px solid #f8dce7;
+ min-height:175px;
+ transition:.25s;
+}
+
+.note:hover{transform:translateY(-5px)}
+
+.note .emoji{font-size:28px}
+
+.note h3{
+ font:20px 'Playfair Display';
+ margin:12px 0 8px;
+ color:#a65376;
+}
+
+.note p{
+ font-size:13px;
+ line-height:1.7;
+ color:#886d7b;
+}
+
+.letterbox{
+ max-width:740px;
+ margin:auto;
+ background:#fffaf7;
+ border:1px solid #f4dbe2;
+ border-radius:8px 28px;
+ padding:clamp(22px,5vw,46px);
+ box-shadow:12px 14px 0 #f4cddd;
+}
+
+.letterbox h3{
+ font:32px 'Sacramento';
+ color:#b65d80;
+ margin-bottom:12px;
+}
+
+.letterbox p{
+ line-height:1.9;
+ font-size:14px;
+ color:#806373;
+ margin-bottom:12px;
+}
+
+.signature{
+ font:30px 'Sacramento';
+ color:#b65d80;
+ text-align:right;
+ margin-top:18px;
+}
+
+.gifts{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:16px;
+}
+
+.gift{
+ background:white;
+ border:1px solid #f5dce6;
+ border-radius:22px;
+ padding:24px 12px;
+ text-align:center;
+ min-height:180px;
+ transition:.25s;
+}
+
+.gift:hover{transform:translateY(-5px)}
+
+.boxemoji{
+ font-size:48px;
+ display:block;
+ animation:bob 2s infinite;
+}
+
+.gift h3{
+ font:19px 'Playfair Display';
+ color:#a65376;
+ margin:12px 0;
+}
+
+.gift p{font-size:12px;color:#967788}
+
+@keyframes bob{
+ 50%{transform:translateY(-7px)}
+}
+
+.cake-area{text-align:center}
+.cake{
+ font-size:100px;
+ animation:bob 3s infinite;
+ cursor:pointer;
+}
+
+.countdown{
+ display:flex;
+ justify-content:center;
+ gap:10px;
+ flex-wrap:wrap;
+ margin:22px 0;
+}
+
+.timebox{
+ background:white;
+ border:1px solid #f5dce6;
+ border-radius:18px;
+ padding:14px 18px;
+ min-width:75px;
+}
+
+.timebox strong{
+ display:block;
+ font:28px 'Playfair Display';
+ color:#b65d80;
+}
+
+.timebox span{
+ font-size:10px;
+ text-transform:uppercase;
+}
+
+.fun-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:18px;
+}
+
+.fun-card{text-align:center}
+.big-emoji{font-size:52px}
+
+.result{
+ min-height:58px;
+ padding:12px;
+ color:#a65376;
+ font:22px 'Sacramento';
+}
+
+.bouquet{
+ font-size:45px;
+ min-height:75px;
+}
+
+.theme-row{
+ display:flex;
+ gap:10px;
+ justify-content:center;
+}
+
+.swatch{
+ width:40px;
+ height:40px;
+ border-radius:50%;
+ border:3px solid white;
+}
+
+.gamebox{
+ background:white;
+ border-radius:20px;
+ padding:16px;
+}
+
+.game-stats{
+ display:flex;
+ justify-content:space-between;
+ font-size:13px;
+ color:#a65376;
+}
+
+.gamefield{
+ height:190px;
+ position:relative;
+ overflow:hidden;
+ border-radius:15px;
+ background:linear-gradient(#fff0f5,#f2eaff);
+ margin-top:12px;
+}
+
+.heart-target{
+ position:absolute;
+ font-size:27px;
+ background:none;
+}
+
+.scratch{
+ height:150px;
+ border-radius:20px;
+ background:linear-gradient(135deg,#f1c2d4,#d9c4f4);
+ display:grid;
+ place-items:center;
+ color:white;
+ font:28px 'Sacramento';
+ padding:15px;
+ cursor:pointer;
+ text-align:center;
+}
+
+.modal{
+ position:fixed;
+ inset:0;
+ background:#50324380;
+ z-index:50;
+ display:none;
+ place-items:center;
+ padding:18px;
+}
+
+.modal.show{display:grid}
+
+.modal-card{
+ width:min(460px,100%);
+ background:#fff9fc;
+ border-radius:25px;
+ padding:28px;
+ text-align:center;
+ animation:pop .3s;
+}
+
+.modal-card h3{
+ font:30px 'Sacramento';
+ color:#b65d80;
+ margin:8px;
+}
+
+.modal-card p{
+ line-height:1.7;
+ color:#806373;
+ margin:15px 0;
+}
+
+.close{
+ background:#f9e2eb;
+ color:#a65376;
+ border-radius:25px;
+ padding:10px 22px;
+ font-weight:bold;
+}
+
+@keyframes pop{
+ from{transform:scale(.8);opacity:0}
+ to{transform:scale(1);opacity:1}
+}
+
+#floatLayer{
+ position:fixed;
+ inset:0;
+ pointer-events:none;
+ z-index:1;
+ overflow:hidden;
+}
+
+.particle{
+ position:absolute;
+ bottom:-30px;
+ animation:rise linear forwards;
+}
+
+@keyframes rise{
+ to{
+  transform:translateY(-110vh) rotate(360deg);
+  opacity:0;
+ }
+}
+
+.intro{
+ position:fixed;
+ inset:0;
+ z-index:100;
+ background:linear-gradient(135deg,#ffeaf1,#f0e5ff);
+ display:grid;
+ place-items:center;
+ text-align:center;
+ padding:20px;
+ transition:.8s;
+}
+
+.intro.hide{
+ opacity:0;
+ pointer-events:none;
+ visibility:hidden;
+}
+
+.intro-gift{
+ font-size:95px;
+ display:block;
+ animation:bob 1.5s infinite;
+}
+
+.intro h2{
+ font:46px 'Sacramento';
+ color:#b65d80;
+ margin:5px;
+}
+
+.intro p{
+ color:#8f6b7d;
+ font-size:13px;
+ margin:12px;
+}
+
+.footer{
+ text-align:center;
+ padding:35px 15px 50px;
+ color:#9a7487;
+ font-size:12px;
+}
+
+.footer .script{
+ font-size:28px;
+ color:#b65d80;
+}
+
+@media(max-width:720px){
+ .nav{display:none}
+ .grid,.gifts{grid-template-columns:1fr 1fr}
+ .fun-grid{grid-template-columns:1fr}
+ section{padding:60px 0}
+ .hero h1{font-size:70px}
+}
+
+@media(max-width:430px){
+ .grid,.gifts{grid-template-columns:1fr}
+ .timebox{min-width:65px;padding:11px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="intro" id="intro">
+ <div>
+  <span class="intro-gift">🎁</span>
+  <p class="eyebrow">A little surprise made with love</p>
+  <h2>For Our Dearest Shona</h2>
+  <p>Someone has prepared a tiny world full of smiles for you...</p>
+  <button class="btn" onclick="enterSite()">Open Your Surprise ♡</button>
+ </div>
+</div>
+
+<div id="floatLayer"></div>
+
+<header class="topbar">
+ <div class="brand">Shona ♡</div>
+
+ <nav class="nav">
+  <a href="#home">HOME</a>
+  <a href="#notes">NOTES</a>
+  <a href="#gifts">SURPRISES</a>
+  <a href="#fun">FUN ZONE</a>
+ </nav>
+
+ <div>
+  <button class="iconbtn" onclick="toggleMusic()">♫</button>
+  <button class="iconbtn" onclick="celebrate()">✦</button>
+ </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+ <span class="hero-deco d1">🌷</span>
+ <span class="hero-deco d2">🦋</span>
+ <span class="hero-deco d3">💗</span>
+ <span class="hero-deco d4">🌸</span>
+
+ <div class="hero-inner">
+
+  <div class="eyebrow">A special day for a special person</div>
+
+  <h1>Happy Birthday<br>Shona!</h1>
+
+  <p>
+   Today is all about celebrating you — your lovely smile,
+   your kind heart and all the happiness you bring to the
+   people around you. May your day be as beautiful as you are! ♡
+  </p>
+
+  <div class="hero-actions">
+   <a class="btn" href="#letter" style="text-decoration:none">Read Your Letter ♡</a>
+   <button class="btn alt" onclick="celebrate()">Make It Sparkle ✨</button>
+  </div>
+
+  <p class="script" style="font-size:30px;color:#b65d80">
+   With lots of love, from your devar ♡
+  </p>
+
+ </div>
+</section>
+
+<!-- LETTER -->
+
+<section id="letter">
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">A little something for you</div>
+  <h2>A Letter From The Heart</h2>
+  <p>Some wishes deserve more than a simple birthday message.</p>
+ </div>
+
+ <article class="letterbox">
+
+  <h3>Dearest Shona, ♡</h3>
+
+  <p>
+   Wishing you the happiest birthday! May your life always
+   be filled with laughter, peace, good health and countless
+   reasons to smile. You deserve all the beautiful things
+   this world has to offer.
+  </p>
+
+  <p>
+   Thank you for being such a lovely part of our family.
+   May every new day bring you something to look forward to,
+   every dream find its way closer to you, and every little
+   wish of yours turn into something wonderful.
+  </p>
+
+  <p>
+   Keep smiling, keep shining and always stay the wonderful
+   person you are. Today and always, may happiness find you
+   wherever you go. Have the most magical birthday!
+  </p>
+
+  <div class="signature">Lots of love, Your Devar ♡</div>
+
+ </article>
+</div>
+</section>
+
+<!-- NOTES -->
+
+<section id="notes">
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">Little reminders</div>
+  <h2>Sweet Notes For Shona</h2>
+  <p>A few tiny notes to make your day even sweeter.</p>
+ </div>
+
+ <div class="grid">
+
+  <div class="note">
+   <div class="emoji">🌷</div>
+   <h3>Keep Blooming</h3>
+   <p>May you keep growing into everything you've ever dreamed of becoming.</p>
+  </div>
+
+  <div class="note">
+   <div class="emoji">🧁</div>
+   <h3>You Deserve The Best</h3>
+   <p>May life serve you happiness in the biggest, sweetest portions.</p>
+  </div>
+
+  <div class="note">
+   <div class="emoji">🦋</div>
+   <h3>Stay Magical</h3>
+   <p>Never lose the little things that make you uniquely you.</p>
+  </div>
+
+  <div class="note">
+   <div class="emoji">💗</div>
+   <h3>Always Remember</h3>
+   <p>You are appreciated more than words can properly explain.</p>
+  </div>
+
+  <div class="note">
+   <div class="emoji">☁️</div>
+   <h3>Soft Days Ahead</h3>
+   <p>Wishing you calm mornings, peaceful nights and beautiful surprises.</p>
+  </div>
+
+  <div class="note">
+   <div class="emoji">✨</div>
+   <h3>Your Year To Shine</h3>
+   <p>May this new chapter bring exciting opportunities and lovely moments.</p>
+  </div>
+
+ </div>
+</div>
+</section>
+
+<!-- GIFTS -->
+
+<section id="gifts">
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">A few surprises</div>
+  <h2>Open Your Little Gifts 🎀</h2>
+  <p>Tap each gift to reveal a tiny surprise.</p>
+ </div>
+
+ <div class="gifts">
+
+  <button class="gift" onclick="showGift(0)">
+   <span class="boxemoji">🎁</span>
+   <h3>Gift Of Happiness</h3>
+   <p>Tap to unwrap</p>
+  </button>
+
+  <button class="gift" onclick="showGift(1)">
+   <span class="boxemoji">💌</span>
+   <h3>A Secret Note</h3>
+   <p>Something sweet inside</p>
+  </button>
+
+  <button class="gift" onclick="showGift(2)">
+   <span class="boxemoji">🌸</span>
+   <h3>A Flower For You</h3>
+   <p>A virtual bouquet</p>
+  </button>
+
+  <button class="gift" onclick="showGift(3)">
+   <span class="boxemoji">⭐</span>
+   <h3>Lucky Star</h3>
+   <p>Make a birthday wish</p>
+  </button>
+
+  <button class="gift" onclick="showGift(4)">
+   <span class="boxemoji">🍰</span>
+   <h3>Sweet Treat</h3>
+   <p>A little birthday sweetness</p>
+  </button>
+
+  <button class="gift" onclick="showGift(5)">
+   <span class="boxemoji">👑</span>
+   <h3>Queen For A Day</h3>
+   <p>Your royal message awaits</p>
+  </button>
+
+ </div>
+</div>
+</section>
+
+<!-- CAKE -->
+
+<section>
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">Make a wish</div>
+  <h2>A Cake Made Just For You</h2>
+  <p>Tap the cake to celebrate your special day!</p>
+ </div>
+
+ <div class="panel cake-area">
+
+  <div class="cake" id="cakeEmoji" onclick="blowCandles()">🎂</div>
+
+  <p id="cakeText">Close your eyes, make a wish and tap the cake ♡</p>
+
+  <button class="btn" onclick="blowCandles()">Make A Wish ✨</button>
+
+  <div class="countdown">
+   <div class="timebox">
+    <strong id="days">--</strong>
+    <span>Days</span>
+   </div>
+
+   <div class="timebox">
+    <strong id="hours">--</strong>
+    <span>Hours</span>
+   </div>
+
+   <div class="timebox">
+    <strong id="mins">--</strong>
+    <span>Minutes</span>
+   </div>
+
+   <div class="timebox">
+    <strong id="secs">--</strong>
+    <span>Seconds</span>
+   </div>
+  </div>
+
+  <p style="font-size:11px">
+   Countdown uses the birthday date set in the code.
+  </p>
+
+ </div>
+</div>
+</section>
+
+<!-- FUN CORNER -->
+
+<section id="fun">
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">Let's have some fun</div>
+  <h2>Shona's Fun Corner</h2>
+  <p>Because birthdays should come with extra smiles!</p>
+ </div>
+
+ <div class="fun-grid">
+
+  <div class="panel fun-card">
+   <div class="big-emoji">💬</div>
+   <h3 class="serif">Compliment Machine</h3>
+   <p>Need a reminder of how wonderful you are?</p>
+   <div class="result" id="compliment">
+    You make ordinary days feel special ♡
+   </div>
+   <button class="btn" onclick="newCompliment()">Another Compliment</button>
+  </div>
+
+  <div class="panel fun-card">
+   <div class="big-emoji">💐</div>
+   <h3 class="serif">A Bouquet For You</h3>
+   <p>Tap to grow your virtual flower bunch.</p>
+   <div class="bouquet" id="bouquet">🌷</div>
+   <button class="btn" onclick="addFlower()">Add A Flower</button>
+  </div>
+
+  <div class="panel fun-card">
+   <div class="big-emoji">🎨</div>
+   <h3 class="serif">Choose Your Mood</h3>
+   <p>Change the little world's colour.</p>
+
+   <div class="theme-row">
+    <button class="swatch" style="background:#ffe1eb"
+     onclick="theme('#ffe1eb','#f4eaff','#bd5c83')"></button>
+
+    <button class="swatch" style="background:#e4dcff"
+     onclick="theme('#e4dcff','#fff0f5','#8061aa')"></button>
+
+    <button class="swatch" style="background:#fff0c9"
+     onclick="theme('#fff0c9','#ffe4df','#ad8051')"></button>
+
+    <button class="swatch" style="background:#d9f2e6"
+     onclick="theme('#d9f2e6','#e5f0ff','#548a78')"></button>
+   </div>
+  </div>
+
+  <div class="panel fun-card">
+   <div class="big-emoji">💌</div>
+   <h3 class="serif">Mystery Message</h3>
+   <p>A random little wish, just for you.</p>
+   <div class="result" id="mystery">
+    A beautiful year is waiting for you ♡
+   </div>
+   <button class="btn" onclick="mystery()">Reveal A Message</button>
+  </div>
+
+ </div>
+</div>
+</section>
+
+<!-- GAME -->
+
+<section>
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">A tiny little game</div>
+  <h2>Catch The Floating Hearts 💗</h2>
+  <p>Tap as many hearts as you can in 15 seconds.</p>
+ </div>
+
+ <div class="panel gamebox">
+
+  <div class="game-stats">
+   <span>Score: <b id="score">0</b></span>
+   <span>Time: <b id="timer">15</b>s</span>
+   <button class="close" onclick="startGame()">Start Game</button>
+  </div>
+
+  <div class="gamefield" id="gamefield">
+   <div style="display:grid;place-items:center;height:100%">
+    Your hearts will appear here ♡
+   </div>
+  </div>
+
+  <p id="gameMessage" style="text-align:center;margin-top:12px">
+   Ready, Shona? Let's play!
+  </p>
+
+ </div>
+</div>
+</section>
+
+<!-- SECRET WISH -->
+
+<section>
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">One last little surprise</div>
+  <h2>Reveal Your Secret Wish</h2>
+  <p>Tap the card to uncover your special message.</p>
+ </div>
+
+ <div style="max-width:520px;margin:auto">
+  <div class="scratch" id="scratchCard" onclick="revealScratch()">
+   Tap To Reveal Your Wish ♡
+  </div>
+ </div>
+
+</div>
+</section>
+
+<!-- FINAL -->
+
+<section>
+<div class="wrap">
+
+ <div class="section-head">
+  <div class="script">Just for you</div>
+  <h2>A Final Birthday Hug ♡</h2>
+ </div>
+
+ <div class="panel" style="max-width:650px;margin:auto;text-align:center">
+
+  <div style="font-size:48px">🧸💗🌷</div>
+
+  <h3 class="serif" style="color:#a65376;margin:15px">
+   Dear Shona,
+  </h3>
+
+  <p style="line-height:1.9;font-size:14px">
+   May you always have reasons to laugh, people who make
+   you feel loved, and the courage to chase every dream
+   in your heart. May this birthday be the beginning of
+   a year filled with beautiful little miracles.
+   Stay blessed, stay happy and keep shining!
+  </p>
+
+  <button class="btn" onclick="celebrate()">
+   Send A Shower Of Love ♡
+  </button>
+
+ </div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+ <div class="script">Made with love, just for Shona ♡</div>
+ <p>Happy Birthday! Keep smiling and keep shining ✨</p>
+ <p>From your devar, with lots of best wishes.</p>
+</footer>
+
+<!-- POPUP -->
+
+<div class="modal" id="modal"
+ onclick="if(event.target===this)closeModal()">
+
+ <div class="modal-card">
+
+  <div style="font-size:48px" id="modalEmoji">💗</div>
+
+  <h3 id="modalTitle">A Little Surprise</h3>
+
+  <p id="modalText"></p>
+
+  <button class="close" onclick="closeModal()">
+   Close With A Smile ♡
+  </button>
+
+ </div>
+</div>
+
+<script>
+
+// GIFT MESSAGES
+
+const gifts=[
+["🌈","Gift Of Happiness",
+"May your days be colourful, your worries tiny and your happiness endless. You deserve a world full of sunshine!"],
+
+["💌","A Secret Note",
+"A little reminder: you are valued, appreciated and loved. Never forget how special you are to this family."],
+
+["💐","A Flower For You",
+"Sending you a whole garden of flowers, warm wishes and virtual hugs. May you always bloom!"],
+
+["⭐","Your Lucky Star",
+"Make a wish and let this little star remind you to keep believing in beautiful possibilities."],
+
+["🍰","A Sweet Treat",
+"Here's an extra-large slice of happiness for you! Happy Birthday!"],
+
+["👑","Queen For A Day",
+"Official announcement: Today, Shona is the queen. Royal treatment, extra cake and unlimited smiles!"]
+];
+
+// COMPLIMENTS
+
+const compliments=[
+"Your smile can brighten the simplest day ♡",
+"You have a heart full of warmth 🌷",
+"You deserve every beautiful thing coming your way ✨",
+"The world is a little sweeter with you in it 💗",
+"You make being family feel extra special 🧸",
+"Never forget how wonderful you are 🌸",
+"Your kindness is your superpower 🦋",
+"Keep shining in your own beautiful way ⭐"
+];
+
+// MESSAGES
+
+const messages=[
+"May your year be softer, brighter and full of joy ♡",
+"Wishing you endless reasons to smile 🌷",
+"May all your little wishes find their way to you ✨",
+"You deserve a lifetime of happy birthdays 💗",
+"Keep blooming, Shona. Your best chapters are ahead!"
+];
+
+// INTRO
+
+function enterSite(){
+ document.getElementById('intro').classList.add('hide');
+ celebrate();
+ setInterval(particle,850);
+}
+
+// FLOATING PARTICLES
+
+function particle(){
+
+ let e=document.createElement('span');
+
+ e.className='particle';
+
+ e.textContent=['♡','✿','🌸','✨','💗']
+ [Math.floor(Math.random()*5)];
+
+ e.style.left=Math.random()*100+'%';
+
+ e.style.fontSize=(14+Math.random()*18)+'px';
+
+ e.style.animationDuration=(5+Math.random()*5)+'s';
+
+ document.getElementById('floatLayer').appendChild(e);
+
+ setTimeout(()=>e.remove(),10000);
+}
+
+// CELEBRATION
+
+function celebrate(){
+
+ for(let i=0;i<35;i++){
+  setTimeout(particle,i*35);
+ }
+
+}
+
+// POPUP
+
+function openModal(emoji,title,text){
+
+ document.getElementById('modalEmoji').textContent=emoji;
+ document.getElementById('modalTitle').textContent=title;
+ document.getElementById('modalText').textContent=text;
+
+ document.getElementById('modal').classList.add('show');
+}
+
+function closeModal(){
+ document.getElementById('modal').classList.remove('show');
+}
+
+// GIFTS
+
+function showGift(i){
+
+ let g=gifts[i];
+
+ openModal(g[0],g[1],g[2]);
+
+ celebrate();
+}
+
+// COMPLIMENT GENERATOR
+
+function newCompliment(){
+
+ document.getElementById('compliment').textContent=
+ compliments[Math.floor(Math.random()*compliments.length)];
+
+}
+
+// MYSTERY MESSAGE
+
+function mystery(){
+
+ document.getElementById('mystery').textContent=
+ messages[Math.floor(Math.random()*messages.length)];
+
+}
+
+// FLOWER BOUQUET
+
+let flowers=1;
+
+function addFlower(){
+
+ flowers=Math.min(flowers+1,12);
+
+ document.getElementById('bouquet').textContent=
+ '🌷'.repeat(flowers);
+
+ if(flowers===12){
+
+  openModal(
+   '💐',
+   'A Whole Garden For You!',
+   'May your life bloom with happiness, love and beautiful surprises.'
+  );
+
+ }
+
+}
+
+// THEMES
+
+function theme(a,b,c){
+
+ document.body.style.background=
+ `linear-gradient(135deg,${a},${b})`;
+
+ document.documentElement.style.setProperty('--deep',c);
+
+}
+
+// CAKE
+
+function blowCandles(){
+
+ document.getElementById('cakeEmoji').textContent='🍰';
+
+ document.getElementById('cakeText').textContent=
+ 'Wish made! May it come true, Shona! ♡';
+
+ celebrate();
+
+}
+
+// SCRATCH SURPRISE
+
+function revealScratch(){
+
+ let el=document.getElementById('scratchCard');
+
+ el.innerHTML=
+ 'May your heart always be as happy as today! 💗';
+
+ el.style.background=
+ 'linear-gradient(135deg,#f7c5d8,#e5d8ff)';
+
+ celebrate();
+
+}
+
+// GAME
+
+let gameInterval=null;
+let gameTimer=null;
+let score=0;
+let timeLeft=15;
+
+function startGame(){
+
+ clearInterval(gameInterval);
+ clearInterval(gameTimer);
+
+ score=0;
+ timeLeft=15;
+
+ document.getElementById('score').textContent=score;
+ document.getElementById('timer').textContent=timeLeft;
+
+ document.getElementById('gameMessage').textContent=
+ 'Catch them all!';
+
+ let field=document.getElementById('gamefield');
+
+ field.innerHTML='';
+
+ function spawn(){
+
+  if(timeLeft<=0)return;
+
+  let h=document.createElement('button');
+
+  h.className='heart-target';
+
+  h.textContent=['💗','💖','💕','💘']
+  [Math.floor(Math.random()*4)];
+
+  h.style.left=Math.random()*88+'%';
+  h.style.top=Math.random()*75+'%';
+
+  h.onclick=()=>{
+
+   score++;
+
+   document.getElementById('score').textContent=score;
+
+   h.remove();
+
+  };
+
+  field.appendChild(h);
+
+  setTimeout(()=>h.remove(),1300);
+
+ }
+
+ spawn();
+
+ gameInterval=setInterval(spawn,500);
+
+ gameTimer=setInterval(()=>{
+
+  timeLeft--;
+
+  document.getElementById('timer').textContent=timeLeft;
+
+  if(timeLeft<=0){
+
+   clearInterval(gameInterval);
+   clearInterval(gameTimer);
+
+   field.innerHTML=
+   '<div style="display:grid;place-items:center;height:100%">💗 Game Complete! 💗</div>';
+
+   document.getElementById('gameMessage').textContent=
+   `You collected ${score} hearts! You deserve a million more!`;
+
+  }
+
+ },1000);
+
+}
+
+// MUSIC BUTTON
+
+function toggleMusic(){
+
+ openModal(
+  '🎵',
+  'Music Corner',
+  'Add your own royalty-free MP3 named music.mp3 beside this HTML file to use background music.'
+ );
+
+}
+
+// COUNTDOWN
+// Change month and day below.
+// January = 0, February = 1 ... September = 8.
+
+const birthdayMonth=8;
+const birthdayDay=20;
+
+function tick(){
+
+ let now=new Date();
+
+ let target=new Date(
+  now.getFullYear(),
+  birthdayMonth,
+  birthdayDay,
+  0,0,0
+ );
+
+ if(target<now){
+  target.setFullYear(target.getFullYear()+1);
+ }
+
+ let diff=target-now;
+
+ let d=Math.floor(diff/86400000);
+
+ let h=Math.floor(diff%86400000/3600000);
+
+ let m=Math.floor(diff%3600000/60000);
+
+ let s=Math.floor(diff%60000/1000);
+
+ document.getElementById('days').textContent=d;
+ document.getElementById('hours').textContent=h;
+ document.getElementById('mins').textContent=m;
+ document.getElementById('secs').textContent=s;
+
+}
+
+tick();
+setInterval(tick,1000);
+
+</script>
+
+</body>
+</html>
